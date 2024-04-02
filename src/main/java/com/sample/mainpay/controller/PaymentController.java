@@ -23,5 +23,6 @@ public class PaymentController {
     public void cardApproval(@RequestBody @Valid PaymentRequestDto request) {
         log.info("/v1/api/payments/payment/card-keyin/trans Request : {}", request);
         ResponseDto response = paymentService.cardApproval(request);
+        log.info("/v1/api/payments/payment/card-keyin/trans Response : {}", response);
     }
 }
